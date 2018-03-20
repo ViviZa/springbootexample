@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Telefonbuch</title>
+</head>
+<body>
+<h1>Mein Telefonbuch</h1>
+<table>
+    <th:block th:each="person : ${personList}">
+        <tr>
+            <td th:text="${person.firstName}">...</td>
+            <td th:text="${person.lastName}">...</td>
+            <!--behind button: direct to Person endpoint-->
+        </tr>
+    </th:block>
+</table>
+</body>
+</html>

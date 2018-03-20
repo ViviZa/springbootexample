@@ -18,9 +18,9 @@ public class PersonClient {
         return null;
     }
 
-    private ArrayList<PersonModel> createPersons(){
+    public ArrayList<PersonModel> createPersons(){
         PersonModel person1 = new PersonModel("1","Paul", 20, "Müller");
-        PersonModel person2 = new PersonModel("2","Lisa", 20, "");
+        PersonModel person2 = new PersonModel("2","Lisa", 20, "Meier");
         PersonModel person3 = new PersonModel("3","Lars", 20, "Müller");
         ArrayList<PersonModel> array = new ArrayList<>();
         array.add(person1);
